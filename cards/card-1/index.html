@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Card UI</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.22.0/tabler-icons.min.css" />
+		<link rel="stylesheet" href="../../assets/css/prism.css">
+		<link rel="stylesheet" href="../../assets/css/style.css">
+	</head>
+
+	<body x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
+		<div class="layout-card-frame">
+			<div class="layout-card-header">
+				<div class="container">
+					<div class="logo">
+						<a href="../../index.html">
+							<img src="../../assets/images/logo-icon.svg" alt="Card UI">
+							<span>Card UI</span>
+						</a>
+					</div>
+					<div class="cta-group">
+						<a href="../../index.html" class="btn btn-dark btn-icon">
+							<i class="ti ti-arrow-left"></i>
+						</a>
+						<button x-on:click="isModalOpen = true" class="btn btn-primary btn-icon-txt">
+							<i class="ti ti-code"></i> Code
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="layout-card-body">
+				<div class="layout-card-wrap">
+
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" role="dialog" tabindex="-1" x-show="isModalOpen" x-on:click.away="isModalOpen = false"
+			x-cloak x-transition>
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content" x-data="{ activeTab:  0 }">
+					<div class="modal-header">
+						<button type="button" class="btn btn-dark btn-icon" aria-label="Close"
+							x-on:click="isModalOpen=false"><i class="ti ti-x"></i></button>
+						<div>
+							<div class="cta-group">
+								<label @click="activeTab = 0" class="tab-control btn btn-sm btn-icon-txt btn-dark"
+									:class="{ 'active': activeTab === 0 }"><i class="ti ti-brand-html5"></i>
+									HTML</label>
+								<label @click="activeTab = 1" class="tab-control btn btn-sm btn-icon-txt btn-dark"
+									:class="{ 'active': activeTab === 1 }"><i class="ti ti-brand-css3"></i> Css</label>
+								<label @click="activeTab = 2" class="tab-control btn btn-sm btn-icon-txt btn-dark"
+									:class="{ 'active': activeTab === 2 }"><i class="ti ti-brand-javascript"></i>
+									Js</label>
+							</div>
+						</div>
+					</div>
+					<div class="modal-body">
+						<div class="tab-wrapper">
+							<div class="tab-content">
+								<div class="tab-panel" :class="{ 'active': activeTab === 0 }" x-show="activeTab === 0">
+									<pre><code class="language-html" data-prismjs-copy="Copy Code"></code></pre>
+								</div>
+								<div class="tab-panel" :class="{ 'active': activeTab === 1 }" x-show="activeTab === 1">
+									<pre><code class="language-css" data-prismjs-copy="Copy Code"></code></pre>
+								</div>
+								<div class="tab-panel" :class="{ 'active': activeTab === 2 }" x-show="activeTab === 2">
+									<pre><code class="language-js" data-prismjs-copy="Copy Code"></code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-overlay" x-show="isModalOpen" x-cloak x-transition></div>
+
+	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" crossorigin="anonymous"
+		referrerpolicy="no-referrer"></script>
+	<script src="../../assets/js/alpinejs.min.js"></script>
+	<script src="../../assets/js/prism.js"></script>
+
+</html>
