@@ -1,18 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Card Ui</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-	<h1 class="h2">
-		<img src="./assets/images/logo-icon.svg" alt=""> Card UI
-	</h1>
-</body>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Card Ui</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+		<meta name="theme-color" content="#FF3C78" />
+		<meta name="keywords" content="card-ui, card ui, Card UI templates, Bootstrap card designs,
+		Mobile-friendly card UI,
+		Minimalist card layouts,
+		Card UI frameworks,
+		Card UI components,
+		Custom card UI,
+		Card design inspiration,
+		Creative UI cards,
+		Card UI generator,
+		Grid-based card layouts,
+		Card UI design trends,
+		Card UI CSS styles,
+		Animated card designs,
+		Card UI showcase,
+		UI card library,
+		Card UI mockups,
+		Card UI kits,
+		Card design guidelines,
+		Card-based navigation">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Card UI">
+		<meta property="og:description"
+			content="Experience the power of visually appealing and functional UI designs with our Card UI website. Start exploring our collection today and elevate your user interfaces to new heights.">
+		<meta property="og:image"
+			content="https://repository-images.githubusercontent.com/656710542/b401365c-a2b2-4699-b522-26b5ce0f9e90">
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:title" content="Card UI">
+		<meta property="twitter:description"
+			content="Experience the power of visually appealing and functional UI designs with our Card UI website. Start exploring our collection today and elevate your user interfaces to new heights.">
+		<meta property="twitter:image"
+			content="https://repository-images.githubusercontent.com/656710542/b401365c-a2b2-4699-b522-26b5ce0f9e90">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sen:wght@400;700&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.22.0/tabler-icons.min.css" />
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+
+	<body x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
+		<!-- Header Start -->
+		<div class="header-wrap">
+			<header>
+				<div class="container">
+					<div class="logo">
+						<a href="index.html">
+							<img src="assets/images/logo-icon.svg" alt="Card UI">
+							<span>Card UI</span>
+						</a>
+					</div>
+					<div class="header-right">
+						<ul>
+							<li>
+								<a class="github-button" href="https://github.com/dropways/card-ui"
+									data-color-scheme="no-preference: dark; light: light; dark: light;"
+									data-icon="octicon-star" data-size="large" data-show-count="true"
+									aria-label="Star dropways/card-ui on GitHub">Star</a>
+							</li>
+							<li>
+								<a href="https://github.com/dropways/card-ui" target="_blank"
+									class="btn btn-primary btn-icon-txt">
+									<i class="ti ti-brand-github"></i> Github
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+		</div>
+		<!-- Header End -->
+
+		<!-- Banner Section Start -->
+		<div class="banner-wrap" style="background-image: url('assets/images/banner-img.png');">
+			<div class="banner-content tick-list">
+				<div class="sub-title">✨ UI kit ✨</div>
+				<h1 class="h1">Card design templates UI <span>kit</span></h1>
+				<ul>
+					<li>Made with HTMl - CSS - Js</li>
+					<li>Fully Responsive</li>
+					<li>Customizable with text, colors, images and icons.</li>
+					<li>Free to edit and use</li>
+					<li>Open-source</li>
+				</ul>
+				<p>Please submit your design if you are interested in having your work displayed in our library.</p>
+				<div class="cta cta-group">
+					<button x-on:click="isModalOpen = true" class="btn btn-primary btn-block">Get Started</button>
+					<a href="#card-section" class="btn btn-dark btn-block offset-top">View Gallery</a>
+				</div>
+			</div>
+		</div>
+		<!-- Banner Section End -->
+
+		<!-- Card List Section Start -->
+		<div class="card-list-wrap" id="card-section">
+			<div class="container">
+				<div class="title-wrap">
+					<h2 class="h2">Card Gallery</h2>
+				</div>
+
+				<div class="card-list">
+					<ul>
+						<li>
+							<a href="./cards/card-01/index.html" class="card-list-item">
+								<div class="card-list-item__no">
+									<span>#01</span>
+								</div>
+								<div class="card-list-item__img">
+									<img src="assets/images/card-1.jpg" alt="">
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Card List Section End -->
+
+		<div class="footer-wrap">
+			<footer>
+				&copy; 2023 dropways. All rights reserved.
+			</footer>
+		</div>
+
+		<!-- Contact Modal Start -->
+		<div class="modal contact-modal" role="dialog" tabindex="-1" x-show="isModalOpen"
+			x-on:click.away="isModalOpen = false" x-cloak x-transition>
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="btn btn-dark btn-icon" aria-label="Close"
+							x-on:click="isModalOpen=false"><i class="ti ti-x"></i></button>
+						<div class="modal-title">Submit Your Work</div>
+					</div>
+					<div class="modal-body">
+						<div class="contact-wrap">
+							<iframe
+								src="https://docs.google.com/forms/d/e/1FAIpQLSe9ChHmOizuKEN1Js0RdqfEBN1SjqGkBXuEj-GT92T25CyzYw/viewform"
+								frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-overlay" x-show="isModalOpen" x-cloak x-transition></div>
+		<!-- Contact Modal End -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+		<script async defer="defer" src="https://buttons.github.io/buttons.js"></script>
+		<script src="assets/js/alpinejs.min.js"></script>
+		<script src="assets/js/script.js"></script>
+	</body>
+
 </html>
