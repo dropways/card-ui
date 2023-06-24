@@ -1,0 +1,48 @@
+.card{
+	background: #ffffff;
+	border-radius: 20px;
+	max-width: 360px;
+	margin: 0 auto;
+}
+.card__header{
+	padding: 24px;
+	display: flex;
+	align-items: center;
+}
+.card__header .avatar{
+	width: 60px;
+	flex-shrink: 0;
+	margin-right: 12px;
+}
+.card__header .avatar img{
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	object-fit: cover;
+}
+.card__header .name{
+	width: 100%;
+	font-size: 15px;
+	color: #78858F;
+	font-weight: 500;
+}
+.card__header .name span{
+	display: block;
+	color: #000000;
+	font-size: 20px;
+}
+.card__header .icon{
+	font-size: 24px;
+	line-height: 1;
+	color: #000000;
+	flex-shrink: 0;
+	margin-left: 12px;
+}
+.card__body img{
+	width: 100%;
+}
+.card__footer{
+	padding: 24px;
+	font-size: 18px;
+	color: #78858F;
+}

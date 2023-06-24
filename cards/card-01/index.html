@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Card UI - #01</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon-16x16.png">
+		<meta name="theme-color" content="#FF3C78" />
+		<meta name="keywords" content="card-ui, card ui, Card UI templates, Bootstrap card designs,
+		Mobile-friendly card UI,
+		Minimalist card layouts,
+		Card UI frameworks,
+		Card UI components,
+		Custom card UI,
+		Card design inspiration,
+		Creative UI cards,
+		Card UI generator,
+		Grid-based card layouts,
+		Card UI design trends,
+		Card UI CSS styles,
+		Animated card designs,
+		Card UI showcase,
+		UI card library,
+		Card UI mockups,
+		Card UI kits,
+		Card design guidelines,
+		Card-based navigation">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Card UI - #01">
+		<meta property="og:description"
+				content="Experience the power of visually appealing and functional UI designs with our Card UI website. Start exploring our collection today and elevate your user interfaces to new heights.">
+		<meta property="og:image"
+				content="https://repository-images.githubusercontent.com/656710542/b401365c-a2b2-4699-b522-26b5ce0f9e90">
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:title" content="Card UI - #01">
+		<meta property="twitter:description"
+				content="Experience the power of visually appealing and functional UI designs with our Card UI website. Start exploring our collection today and elevate your user interfaces to new heights.">
+		<meta property="twitter:image"
+				content="https://repository-images.githubusercontent.com/656710542/b401365c-a2b2-4699-b522-26b5ce0f9e90">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sen:wght@400;700&display=swap"
+				rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.22.0/tabler-icons.min.css" />
+		<link rel="stylesheet" href="../../assets/css/prism.css">
+		<link rel="stylesheet" href="../../assets/css/style.css">
+		<link rel="stylesheet" href="./card-1.css">
+	</head>
+
+	<body x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
+		<div class="layout-card-frame">
+			<div class="layout-card-header">
+				<div class="container">
+					<div class="logo">
+						<a href="../../index.html">
+							<img src="../../assets/images/logo-icon.svg" alt="Card UI">
+							<span>Card UI</span>
+						</a>
+					</div>
+					<div class="cta-group">
+						<a href="../../index.html" class="btn btn-dark btn-icon">
+							<i class="ti ti-arrow-left"></i>
+						</a>
+						<button x-on:click="isModalOpen = true" class="btn btn-primary btn-icon-txt">
+							<i class="ti ti-code"></i> Get Code
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="layout-card-body">
+				<div class="layout-card-wrap">
+					<div class="card">
+						<div class="card__header">
+							<div class="avatar">
+								<img src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+										width="60" height="60" alt="">
+							</div>
+							<div class="name">
+								<span>Frank Esteban</span>
+								Web Development
+							</div>
+							<div class="icon">
+								<i class="ti ti-dots-vertical"></i>
+							</div>
+						</div>
+						<div class="card__body">
+							<img src="https://images.unsplash.com/photo-1520256862855-398228c41684?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
+									alt="">
+						</div>
+						<div class="card__footer">
+							This is a basic card
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" role="dialog" tabindex="-1" x-show="isModalOpen" x-on:click.away="isModalOpen = false" x-cloak
+				x-transition>
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content" x-data="{ activeTab:  0 }">
+					<div class="modal-header">
+						<button type="button" class="btn btn-dark btn-icon" aria-label="Close" x-on:click="isModalOpen=false"><i
+									class="ti ti-x"></i></button>
+						<div>
+							<div class="cta-group">
+								<label @click="activeTab = 0" class="tab-control btn btn-sm btn-icon-txt btn-dark"
+										:class="{ 'active': activeTab === 0 }"><i class="ti ti-brand-html5"></i>
+									HTML</label>
+								<label @click="activeTab = 1" class="tab-control btn btn-sm btn-icon-txt btn-dark"
+										:class="{ 'active': activeTab === 1 }"><i class="ti ti-brand-css3"></i> Css</label>
+								<label @click="activeTab = 2" class="tab-control btn btn-sm btn-icon-txt btn-dark"
+										:class="{ 'active': activeTab === 2 }"><i class="ti ti-brand-javascript"></i>
+									Js</label>
+							</div>
+						</div>
+					</div>
+					<div class="modal-body">
+						<div class="tab-wrapper">
+							<div class="tab-content">
+								<div class="tab-panel" :class="{ 'active': activeTab === 0 }" x-show="activeTab === 0">
+									<pre><code class="language-html" data-prismjs-copy="Copy Code">&lt;div class="card"&gt;
+	&lt;div class="card__header"&gt;
+		&lt;div class="avatar"&gt;
+			&lt;img src="[image path]" width="60" height="60" alt=""&gt;
+		&lt;/div&gt;
+		&lt;div class="name"&gt;
+			&lt;span&gt;Frank Esteban&lt;/span&gt;
+			Web Development
+		&lt;/div&gt;
+		&lt;div class="icon"&gt;
+			&lt;i class="ti ti-dots-vertical"&gt;&lt;/i&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="card__body"&gt;
+		&lt;img src="[image path]" alt=""&gt;
+	&lt;/div&gt;
+	&lt;div class="card__footer"&gt;
+		This is a basic card
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+								</div>
+								<div class="tab-panel" :class="{ 'active': activeTab === 1 }" x-show="activeTab === 1">
+									<pre data-src="card-1.css" data-prismjs-copy="Copy Code"></pre>
+								</div>
+								<div class="tab-panel" :class="{ 'active': activeTab === 2 }" x-show="activeTab === 2">
+									<pre><code class="language-js" data-prismjs-copy="Copy Code">Js Code Is Empty</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-overlay" x-show="isModalOpen" x-cloak x-transition></div>
+
+	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+	<script src="../../assets/js/alpinejs.min.js"></script>
+	<script async src="../../assets/js/prism.js"></script>
+
+</html>

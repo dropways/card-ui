@@ -29,11 +29,15 @@ pre[class*="language-"] {
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	background: rgba(255, 243, 247, .2);
+	color: #ffffff;
 	text-shadow: none;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	background: rgba(255, 243, 247, .2);
+	color: #ffffff;
 	text-shadow: none;
 }
 
@@ -85,7 +89,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-	color: #905;
+	color: #ff3c78;
 }
 
 .token.selector,
@@ -110,7 +114,7 @@ pre[class*="language-"] {
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	color: #07a;
+	color: #00b2ff;
 }
 
 .token.function,
