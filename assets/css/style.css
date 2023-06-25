@@ -54,7 +54,9 @@ a:focus {
 	text-decoration: none;
 	color: #000;
 }
-
+*:focus-visible {
+	outline: 0;
+}
 .btn:focus {
 	box-shadow: none;
 }
@@ -501,6 +503,9 @@ input:-ms-input-placeholder {
 	padding: 48px 16px;
 	font-family: 'Inter', sans-serif;
 }
+.layout-card-wrap{
+	width: 100%;
+}
 
 @media (max-width: 767px){
 	.logo a span{display: none;}
@@ -614,7 +619,7 @@ input:-ms-input-placeholder {
 
 @media (min-width: 576px) {
 	.modal-dialog {
-		max-width: 720px;
+		max-width: 820px;
 		margin-right: auto;
 		margin-left: auto;
 	}
