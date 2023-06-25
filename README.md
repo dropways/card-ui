@@ -14,9 +14,9 @@ We value your feedback and suggestions, as they help us improve our offerings an
 
 ## Demo
 
-| Card - 01 |
-| --- |
-| [![Card - 01](https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/248484878-f72db189-3e98-454d-81bd-20ab3323a2e4.jpg)](https://dropways.github.io/card-ui/cards/card-01/)
+| Card - 01 | Card - 02 |
+| --- | --- |
+| [![Card - 01](https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/248484878-f72db189-3e98-454d-81bd-20ab3323a2e4.jpg)](https://dropways.github.io/card-ui/cards/card-01/) | [![Card - 02](https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/248573168-d5c5fecd-3423-4b93-8e95-04b5cd517192.jpg)](https://dropways.github.io/card-ui/cards/card-02/)
 
 ## Browser Support
 
