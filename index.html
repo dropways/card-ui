@@ -29,29 +29,42 @@
 		Card UI kits,
 		Card design guidelines,
 		Card-based navigation">
+		<!-- Google Tag Manager -->
+		<script>(function (w, d, s, l, i) {
+				w[l] = w[l] || []; w[l].push({
+					'gtm.start':
+						new Date().getTime(), event: 'gtm.js'
+				}); var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+						'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'dataLayer', 'GTM-TCTGDWX');</script>
+		<!-- End Google Tag Manager -->
 		<meta property="og:type" content="website">
 		<meta property="og:title" content="Card UI">
 		<meta property="og:description"
-			content="Experience the power of visually appealing and functional UI designs with our Card UI website. Start exploring our collection today and elevate your user interfaces to new heights.">
+				content="Experience the power of visually appealing and functional UI designs with our Card UI website. Start exploring our collection today and elevate your user interfaces to new heights.">
 		<meta property="og:image"
-			content="https://repository-images.githubusercontent.com/656710542/b401365c-a2b2-4699-b522-26b5ce0f9e90">
+				content="https://repository-images.githubusercontent.com/656710542/b401365c-a2b2-4699-b522-26b5ce0f9e90">
 		<meta property="twitter:card" content="summary_large_image">
 		<meta property="twitter:title" content="Card UI">
 		<meta property="twitter:description"
-			content="Experience the power of visually appealing and functional UI designs with our Card UI website. Start exploring our collection today and elevate your user interfaces to new heights.">
+				content="Experience the power of visually appealing and functional UI designs with our Card UI website. Start exploring our collection today and elevate your user interfaces to new heights.">
 		<meta property="twitter:image"
-			content="https://repository-images.githubusercontent.com/656710542/b401365c-a2b2-4699-b522-26b5ce0f9e90">
+				content="https://repository-images.githubusercontent.com/656710542/b401365c-a2b2-4699-b522-26b5ce0f9e90">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sen:wght@400;700&display=swap"
-			rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sen:wght@400;700&display=swap"
+				rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.22.0/tabler-icons.min.css" />
 		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
 
 	<body x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCTGDWX" height="0" width="0"
+					style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 		<!-- Header Start -->
 		<div class="header-wrap">
 			<header>
@@ -66,13 +79,11 @@
 						<ul>
 							<li>
 								<a class="github-button" href="https://github.com/dropways/card-ui"
-									data-color-scheme="no-preference: dark; light: light; dark: light;"
-									data-icon="octicon-star" data-size="large" data-show-count="true"
-									aria-label="Star dropways/card-ui on GitHub">Star</a>
+										data-color-scheme="no-preference: dark; light: light; dark: light;" data-icon="octicon-star"
+										data-size="large" data-show-count="true" aria-label="Star dropways/card-ui on GitHub">Star</a>
 							</li>
 							<li>
-								<a href="https://github.com/dropways/card-ui" target="_blank"
-									class="btn btn-primary btn-icon-txt">
+								<a href="https://github.com/dropways/card-ui" target="_blank" class="btn btn-primary btn-icon-txt">
 									<i class="ti ti-brand-github"></i> Github
 								</a>
 							</li>
@@ -119,7 +130,8 @@
 									<span>#01</span>
 								</div>
 								<div class="card-list-item__img">
-									<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/248484878-f72db189-3e98-454d-81bd-20ab3323a2e4.jpg" alt="">
+									<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/248484878-f72db189-3e98-454d-81bd-20ab3323a2e4.jpg"
+											alt="">
 								</div>
 							</a>
 						</li>
@@ -129,7 +141,8 @@
 									<span>#02</span>
 								</div>
 								<div class="card-list-item__img">
-									<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/248573168-d5c5fecd-3423-4b93-8e95-04b5cd517192.jpg" alt="">
+									<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/248573168-d5c5fecd-3423-4b93-8e95-04b5cd517192.jpg"
+											alt="">
 								</div>
 							</a>
 						</li>
@@ -147,19 +160,19 @@
 
 		<!-- Contact Modal Start -->
 		<div class="modal contact-modal" role="dialog" tabindex="-1" x-show="isModalOpen"
-			x-on:click.away="isModalOpen = false" x-cloak x-transition>
+				x-on:click.away="isModalOpen = false" x-cloak x-transition>
 			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="btn btn-dark btn-icon" aria-label="Close"
-							x-on:click="isModalOpen=false"><i class="ti ti-x"></i></button>
+						<button type="button" class="btn btn-dark btn-icon" aria-label="Close" x-on:click="isModalOpen=false"><i
+									class="ti ti-x"></i></button>
 						<div class="modal-title">Submit Your Work</div>
 					</div>
 					<div class="modal-body">
 						<div class="contact-wrap">
 							<iframe
-								src="https://docs.google.com/forms/d/e/1FAIpQLSe9ChHmOizuKEN1Js0RdqfEBN1SjqGkBXuEj-GT92T25CyzYw/viewform"
-								frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+									src="https://docs.google.com/forms/d/e/1FAIpQLSe9ChHmOizuKEN1Js0RdqfEBN1SjqGkBXuEj-GT92T25CyzYw/viewform"
+									frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 						</div>
 					</div>
 				</div>
@@ -169,7 +182,7 @@
 		<!-- Contact Modal End -->
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" crossorigin="anonymous"
-			referrerpolicy="no-referrer"></script>
+				referrerpolicy="no-referrer"></script>
 		<script async defer="defer" src="https://buttons.github.io/buttons.js"></script>
 		<script src="assets/js/alpinejs.min.js"></script>
 		<script src="assets/js/script.js"></script>
