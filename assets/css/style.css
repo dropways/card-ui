@@ -479,6 +479,9 @@ input:-ms-input-placeholder {
 	flex-direction: column;
 	height: 100vh;
 }
+.layout-card-frame.layout-card-frame--light .layout-card-body{
+	background: #ffffff;
+}
 
 .layout-card-header {
 	height: 80px;
