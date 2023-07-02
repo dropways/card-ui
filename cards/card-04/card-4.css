@@ -131,6 +131,9 @@
 	border: 0;
 	border-radius: 4px;
 }
+.card__btn:hover{
+	color: #ffffff;
+}
 
 .card__price{
 	font-size: 20px;

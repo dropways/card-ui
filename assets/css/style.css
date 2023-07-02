@@ -81,6 +81,10 @@ button {
 	outline: none !important;
 }
 
+button{
+	font-family: 'Inter', sans-serif;
+}
+
 button::-moz-focus-inner {
 	border: 0;
 }
@@ -794,6 +798,9 @@ input:-ms-input-placeholder {
 	/* break-inside: avoid;
 	counter-increment: item-counter; */
 }
+.card-list ul li.full-col{
+	width: 100%;
+}
 
 .card-list-item{
 	position: relative;
@@ -820,7 +827,7 @@ input:-ms-input-placeholder {
 	letter-spacing: 0.10rem;
 }
 .card-list-item .card-list-item__img img{
-	border-radius: 16px;
+	/* border-radius: 16px; */
 	width: 100%;
 }
 
