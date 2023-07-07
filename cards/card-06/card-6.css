@@ -1,0 +1,64 @@
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card__header {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.card__body--title {
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 38px;
+  padding: 25px;
+}
+
+.card__footer {
+  padding: 24px;
+  font-size: 18px;
+  color: #78858F;
+}
+
+/* User Info Style */
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info .avatar {
+  width: 60px;
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+.user-info .avatar .img-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.user-info .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.user-info .name {
+  width: 100%;
+  font-size: 15px;
+  color: #78858F;
+  font-weight: 500;
+}
+
+.user-info .name span {
+  display: block;
+  color: #000000;
+  font-size: 20px;
+}
