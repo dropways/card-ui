@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Card UI - #09</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon-16x16.png">
+	<meta name="theme-color" content="#FF3C78" />
+	<meta name="keywords" content="card-ui, card ui, Card UI templates, Bootstrap card designs,
+		Mobile-friendly card UI,
+		Minimalist card layouts,
+		Card UI frameworks,
+		Card UI components,
+		Custom card UI,
+		Card design inspiration,
+		Creative UI cards,
+		Card UI generator,
+		Grid-based card layouts,
+		Card UI design trends,
+		Card UI CSS styles,
+		Animated card designs,
+		Card UI showcase,
+		UI card library,
+		Card UI mockups,
+		Card UI kits,
+		Card design guidelines,
+		Card-based navigation">
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-TCTGDWX');</script>
+	<!-- End Google Tag Manager -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Card UI - #08">
+	<meta property="og:description"
+		content="Experience the power of visually appealing and functional UI designs with our Card UI website. Start exploring our collection today and elevate your user interfaces to new heights.">
+	<meta property="og:image"
+		content="https://repository-images.githubusercontent.com/656710542/b401365c-a2b2-4699-b522-26b5ce0f9e90">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:title" content="Card UI - #08">
+	<meta property="twitter:description"
+		content="Experience the power of visually appealing and functional UI designs with our Card UI website. Start exploring our collection today and elevate your user interfaces to new heights.">
+	<meta property="twitter:image"
+		content="https://repository-images.githubusercontent.com/656710542/b401365c-a2b2-4699-b522-26b5ce0f9e90">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sen:wght@400;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.22.0/tabler-icons.min.css" />
+	<link rel="stylesheet" href="../../assets/css/style.css">
+	<link rel="stylesheet" href="./card-9.css">
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCTGDWX" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<!-- Header Start -->
+	<div class="layout-card-frame">
+		<div class="layout-card-header">
+			<div class="container">
+				<div class="logo">
+					<a href="../../index.html">
+						<img src="../../assets/images/logo-icon.svg" alt="Card UI">
+						<span>Card UI</span>
+					</a>
+				</div>
+				<div class="cta-group">
+					<a href="../../index.html" class="btn btn-dark btn-icon">
+						<i class="ti ti-arrow-left"></i>
+					</a>
+					<a href="https://github.com/dropways/card-ui/tree/main/cards/card-09" target="_blank"
+						class="btn btn-primary btn-icon-txt">
+						<i class="ti ti-code"></i> Get Code
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="layout-card-body">
+			<div class="layout-card-wrap">
+				<div class="card">
+					<div class="card__header">
+						<div class="user-info">
+							<div class="avatar">
+								<div class="img-box">
+									<img src="https://images.pexels.com/photos/4449136/pexels-photo-4449136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+										width="60" height="60" alt="">
+								</div>
+							</div>
+							<div class="name">
+								<span>Annette Black</span>
+								Web Development
+							</div>
+							<div class="user-dd">
+								<div x-data="{
+								open: false,
+								toggle() {
+										if (this.open) {
+												return this.close()
+										}
+										this.$refs.button.focus()
+										this.open = true
+								},
+								close(focusAfter) {
+										if (! this.open) return
+										this.open = false
+										focusAfter && focusAfter.focus()
+								}
+								}" x-on:keydown.escape.prevent.stop="close($refs.button)"
+									x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
+									x-id="['dropdown-button']" class="dd">
+									<!-- Button -->
+									<button x-ref="button" x-on:click="toggle()" :aria-expanded="open"
+										:aria-controls="$id('dropdown-button')" type="button" class="dd__btn">
+
+										<i :class="open ? 'ti-x' : 'ti-dots-vertical'" class="ti"></i>
+									</button>
+
+									<!-- Panel -->
+									<div x-ref="panel" x-show="open" x-transition.origin.top.left
+										x-on:click.outside="close($refs.button)" :id="$id('dropdown-button')"
+										style="display: none;" class="dd__menu">
+										<a href="#" class="dd__item">
+											<span class="dd__item__icon"><i class="ti ti-user-shield"></i></span>
+											<span class="dd__item__txt">Account</span>
+										</a>
+										<a href="#" class="dd__item">
+											<span class="dd__item__icon"><i class="ti ti-settings-cog"></i></span>
+											<span class="dd__item__txt">Settings</span>
+										</a>
+										<a href="#" class="dd__item">
+											<span class="dd__item__icon"><i class="ti ti-logout"></i></span>
+											<span class="dd__item__txt">Logout</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="card__body">
+						<div class="card__body--img">
+							<img src="https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?auto=compress&cs=tinysrgb&w=1600"
+								alt="" srcset="">
+						</div>
+						<div class="card__body--title">
+							Minim dolor in amet nulla laboris
+						</div>
+					</div>
+					<div class="card__footer">
+						October 14
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" crossorigin="anonymous"
+	referrerpolicy="no-referrer"></script>
+<script src="../../assets/js/alpinejs.min.js"></script>
+
+</html>
