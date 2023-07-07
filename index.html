@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Card Ui</title>
-		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-		<meta name="theme-color" content="#FF3C78" />
-		<meta name="keywords" content="card-ui, card ui, Card UI templates, Bootstrap card designs,
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Card Ui</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+	<meta name="theme-color" content="#FF3C78" />
+	<meta name="keywords" content="card-ui, card ui, Card UI templates, Bootstrap card designs,
 		Mobile-friendly card UI,
 		Minimalist card layouts,
 		Card UI frameworks,
@@ -29,196 +29,242 @@
 		Card UI kits,
 		Card design guidelines,
 		Card-based navigation">
-		<!-- Google Tag Manager -->
-		<script>(function (w, d, s, l, i) {
-				w[l] = w[l] || []; w[l].push({
-					'gtm.start':
-						new Date().getTime(), event: 'gtm.js'
-				}); var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-						'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-			})(window, document, 'script', 'dataLayer', 'GTM-TCTGDWX');</script>
-		<!-- End Google Tag Manager -->
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="Card UI">
-		<meta property="og:description"
-				content="Experience the power of visually appealing and functional UI designs with our Card UI website. Start exploring our collection today and elevate your user interfaces to new heights.">
-		<meta property="og:image"
-				content="https://repository-images.githubusercontent.com/656710542/b401365c-a2b2-4699-b522-26b5ce0f9e90">
-		<meta property="twitter:card" content="summary_large_image">
-		<meta property="twitter:title" content="Card UI">
-		<meta property="twitter:description"
-				content="Experience the power of visually appealing and functional UI designs with our Card UI website. Start exploring our collection today and elevate your user interfaces to new heights.">
-		<meta property="twitter:image"
-				content="https://repository-images.githubusercontent.com/656710542/b401365c-a2b2-4699-b522-26b5ce0f9e90">
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-TCTGDWX');</script>
+	<!-- End Google Tag Manager -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Card UI">
+	<meta property="og:description"
+		content="Experience the power of visually appealing and functional UI designs with our Card UI website. Start exploring our collection today and elevate your user interfaces to new heights.">
+	<meta property="og:image"
+		content="https://repository-images.githubusercontent.com/656710542/b401365c-a2b2-4699-b522-26b5ce0f9e90">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:title" content="Card UI">
+	<meta property="twitter:description"
+		content="Experience the power of visually appealing and functional UI designs with our Card UI website. Start exploring our collection today and elevate your user interfaces to new heights.">
+	<meta property="twitter:image"
+		content="https://repository-images.githubusercontent.com/656710542/b401365c-a2b2-4699-b522-26b5ce0f9e90">
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sen:wght@400;700&display=swap"
-				rel="stylesheet">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.22.0/tabler-icons.min.css" />
-		<link rel="stylesheet" href="assets/css/style.css">
-	</head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sen:wght@400;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.22.0/tabler-icons.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-	<body x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
-		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCTGDWX" height="0" width="0"
-					style="display:none;visibility:hidden"></iframe></noscript>
-		<!-- End Google Tag Manager (noscript) -->
-		<!-- Header Start -->
-		<div class="header-wrap">
-			<header>
-				<div class="container">
-					<div class="logo">
-						<a href="index.html">
-							<img src="assets/images/logo-icon.svg" alt="Card UI">
-							<span>Card UI</span>
-						</a>
-					</div>
-					<div class="header-right">
-						<ul>
-							<li>
-								<a class="github-button" href="https://github.com/dropways/card-ui"
-										data-color-scheme="no-preference: dark; light: light; dark: light;" data-icon="octicon-star"
-										data-size="large" data-show-count="true" aria-label="Star dropways/card-ui on GitHub">Star</a>
-							</li>
-							<li>
-								<a href="https://github.com/dropways/card-ui" target="_blank" class="btn btn-primary btn-icon-txt">
-									<i class="ti ti-brand-github"></i> Github
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</header>
-		</div>
-		<!-- Header End -->
-
-		<!-- Banner Section Start -->
-		<div class="banner-wrap" style="background-image: url('assets/images/banner-img.png');">
-			<div class="banner-content tick-list">
-				<div class="sub-title">✨ UI kit ✨</div>
-				<h1 class="h1">Card design templates UI <span>kit</span></h1>
-				<ul>
-					<li>Made with HTMl - CSS - Js</li>
-					<li>Fully Responsive</li>
-					<li>Customizable with text, colors, images and icons.</li>
-					<li>Free to edit and use</li>
-					<li>Open-source</li>
-				</ul>
-				<p>Please submit your design if you are interested in having your work displayed in our library.</p>
-				<div class="cta cta-group">
-					<button x-on:click="isModalOpen = true" class="btn btn-primary btn-block">Get Started</button>
-					<a href="#card-section" class="btn btn-dark btn-block offset-top">View Gallery</a>
-				</div>
-			</div>
-		</div>
-		<!-- Banner Section End -->
-
-		<!-- Card List Section Start -->
-		<div class="card-list-wrap" id="card-section">
+<body x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCTGDWX" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<!-- Header Start -->
+	<div class="header-wrap">
+		<header>
 			<div class="container">
-				<div class="title-wrap">
-					<h2 class="h2">Card Gallery</h2>
+				<div class="logo">
+					<a href="index.html">
+						<img src="assets/images/logo-icon.svg" alt="Card UI">
+						<span>Card UI</span>
+					</a>
 				</div>
-
-				<div class="card-list">
+				<div class="header-right">
 					<ul>
 						<li>
-							<a href="./cards/card-01/index.html" class="card-list-item" style="background-color: #80ee98;">
-								<div class="card-list-item__no">
-									<span>#01</span>
-								</div>
-								<div class="card-list-item__img">
-									<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/250359059-6bd3f121-581b-4b20-8fe3-aa41ef3cc7fe.jpg"
-											alt="">
-								</div>
-							</a>
+							<a class="github-button" href="https://github.com/dropways/card-ui"
+								data-color-scheme="no-preference: dark; light: light; dark: light;"
+								data-icon="octicon-star" data-size="large" data-show-count="true"
+								aria-label="Star dropways/card-ui on GitHub">Star</a>
 						</li>
 						<li>
-							<a href="./cards/card-02/index.html" class="card-list-item" style="background-color: #ff3c78;">
-								<div class="card-list-item__no">
-									<span>#02</span>
-								</div>
-								<div class="card-list-item__img">
-									<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/250359134-1f6eb37d-4983-45d4-9b89-d6a8c43ea5f3.png"
-											alt="">
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="./cards/card-03/index.html" class="card-list-item" style="background-color: #e7c6ff;">
-								<div class="card-list-item__no">
-									<span>#03</span>
-								</div>
-								<div class="card-list-item__img">
-									<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/250358958-18fc8e8d-f04c-47cf-9dad-21ea974a9e22.jpg"
-											alt="">
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="./cards/card-04/index.html" class="card-list-item" style="background-color: #FFD6BA;">
-								<div class="card-list-item__no">
-									<span>#04</span>
-								</div>
-								<div class="card-list-item__img">
-									<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/250358809-10b08b9c-1fb0-48db-9f07-55376655fcdd.jpg"
-											alt="">
-								</div>
-							</a>
-						</li>
-						<li class="full-col">
-							<a href="./cards/card-05/index.html" class="card-list-item" style="background-color: #003049;">
-								<div class="card-list-item__no">
-									<span>#05</span>
-								</div>
-								<div class="card-list-item__img">
-									<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/250366462-af1a6e28-55e1-460b-99fb-da5a1c22c112.png"
-											alt="">
-								</div>
+							<a href="https://github.com/dropways/card-ui" target="_blank"
+								class="btn btn-primary btn-icon-txt">
+								<i class="ti ti-brand-github"></i> Github
 							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
-		</div>
-		<!-- Card List Section End -->
+		</header>
+	</div>
+	<!-- Header End -->
 
-		<div class="footer-wrap">
-			<footer>
-				&copy; 2023 dropways. All rights reserved.
-			</footer>
+	<!-- Banner Section Start -->
+	<div class="banner-wrap" style="background-image: url('assets/images/banner-img.png');">
+		<div class="banner-content tick-list">
+			<div class="sub-title">✨ UI kit ✨</div>
+			<h1 class="h1">Card design templates UI <span>kit</span></h1>
+			<ul>
+				<li>Made with HTMl - CSS - Js</li>
+				<li>Fully Responsive</li>
+				<li>Customizable with text, colors, images and icons.</li>
+				<li>Free to edit and use</li>
+				<li>Open-source</li>
+			</ul>
+			<p>Please submit your design if you are interested in having your work displayed in our library.</p>
+			<div class="cta cta-group">
+				<button x-on:click="isModalOpen = true" class="btn btn-primary btn-block">Get Started</button>
+				<a href="#card-section" class="btn btn-dark btn-block offset-top">View Gallery</a>
+			</div>
 		</div>
+	</div>
+	<!-- Banner Section End -->
 
-		<!-- Contact Modal Start -->
-		<div class="modal contact-modal" role="dialog" tabindex="-1" x-show="isModalOpen"
-				x-on:click.away="isModalOpen = false" x-cloak x-transition>
-			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="btn btn-dark btn-icon" aria-label="Close" x-on:click="isModalOpen=false"><i
-									class="ti ti-x"></i></button>
-						<div class="modal-title">Submit Your Work</div>
-					</div>
-					<div class="modal-body">
-						<div class="contact-wrap">
-							<iframe
-									src="https://docs.google.com/forms/d/e/1FAIpQLSe9ChHmOizuKEN1Js0RdqfEBN1SjqGkBXuEj-GT92T25CyzYw/viewform"
-									frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-						</div>
+	<!-- Card List Section Start -->
+	<div class="card-list-wrap" id="card-section">
+		<div class="container">
+			<div class="title-wrap">
+				<h2 class="h2">Card Gallery</h2>
+			</div>
+
+			<div class="card-list">
+				<ul>
+					<li>
+						<a href="./cards/card-01/index.html" class="card-list-item" style="background-color: #ffe3c0;">
+							<div class="card-list-item__no">
+								<span>#01</span>
+							</div>
+							<div class="card-list-item__img">
+								<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/250359059-6bd3f121-581b-4b20-8fe3-aa41ef3cc7fe.jpg"
+									alt="Card UI 01">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./cards/card-02/index.html" class="card-list-item" style="background-color: #ffe3c0;">
+							<div class="card-list-item__no">
+								<span>#02</span>
+							</div>
+							<div class="card-list-item__img">
+								<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/250359134-1f6eb37d-4983-45d4-9b89-d6a8c43ea5f3.png"
+									alt="Card UI 02">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./cards/card-03/index.html" class="card-list-item" style="background-color: #ffe3c0;">
+							<div class="card-list-item__no">
+								<span>#03</span>
+							</div>
+							<div class="card-list-item__img">
+								<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/250358958-18fc8e8d-f04c-47cf-9dad-21ea974a9e22.jpg"
+									alt="Card UI 03">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./cards/card-04/index.html" class="card-list-item" style="background-color: #ffe3c0;">
+							<div class="card-list-item__no">
+								<span>#04</span>
+							</div>
+							<div class="card-list-item__img">
+								<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/250358809-10b08b9c-1fb0-48db-9f07-55376655fcdd.jpg"
+									alt="Card UI 04">
+							</div>
+						</a>
+					</li>
+					<li class="full-col">
+						<a href="./cards/card-05/index.html" class="card-list-item" style="background-color: #003049;">
+							<div class="card-list-item__no">
+								<span>#05</span>
+							</div>
+							<div class="card-list-item__img">
+								<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/250366462-af1a6e28-55e1-460b-99fb-da5a1c22c112.png"
+									alt="Card UI 05">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./cards/card-06/index.html" class="card-list-item" style="background-color: #DDE0E3;">
+							<div class="card-list-item__no">
+								<span>#06</span>
+							</div>
+							<div class="card-list-item__img">
+								<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/251437279-eb93cba4-d22e-4eb6-bfb6-77f23e7dcfe5.png"
+									alt="Card UI 06">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./cards/card-07/index.html" class="card-list-item" style="background-color: #DDE0E3;">
+							<div class="card-list-item__no">
+								<span>#07</span>
+							</div>
+							<div class="card-list-item__img">
+								<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/251510882-ac5f322f-9270-4bb7-b79d-fd287ed4dd10.png"
+									alt="Card UI 07">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./cards/card-08/index.html" class="card-list-item" style="background-color: #DDE0E3;">
+							<div class="card-list-item__no">
+								<span>#08</span>
+							</div>
+							<div class="card-list-item__img">
+								<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/251513528-649ca777-0038-4046-9d53-e3ed2025cda9.png"
+									alt="Card UI 08">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./cards/card-09/index.html" class="card-list-item" style="background-color: #DDE0E3;">
+							<div class="card-list-item__no">
+								<span>#09</span>
+							</div>
+							<div class="card-list-item__img">
+								<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/38377336/251514787-206501c4-1e7a-452d-97eb-5f9813d38c00.png"
+									alt="Card UI 09">
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Card List Section End -->
+
+	<div class="footer-wrap">
+		<footer>
+			&copy; 2023 dropways. All rights reserved.
+		</footer>
+	</div>
+
+	<!-- Contact Modal Start -->
+	<div class="modal contact-modal" role="dialog" tabindex="-1" x-show="isModalOpen"
+		x-on:click.away="isModalOpen = false" x-cloak x-transition>
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn btn-dark btn-icon" aria-label="Close"
+						x-on:click="isModalOpen=false"><i class="ti ti-x"></i></button>
+					<div class="modal-title">Submit Your Work</div>
+				</div>
+				<div class="modal-body">
+					<div class="contact-wrap">
+						<iframe
+							src="https://docs.google.com/forms/d/e/1FAIpQLSe9ChHmOizuKEN1Js0RdqfEBN1SjqGkBXuEj-GT92T25CyzYw/viewform"
+							frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="modal-overlay" x-show="isModalOpen" x-cloak x-transition></div>
-		<!-- Contact Modal End -->
+	</div>
+	<div class="modal-overlay" x-show="isModalOpen" x-cloak x-transition></div>
+	<!-- Contact Modal End -->
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" crossorigin="anonymous"
-				referrerpolicy="no-referrer"></script>
-		<script async defer="defer" src="https://buttons.github.io/buttons.js"></script>
-		<script src="assets/js/alpinejs.min.js"></script>
-		<script src="assets/js/script.js"></script>
-	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" crossorigin="anonymous"
+		referrerpolicy="no-referrer"></script>
+	<script async defer="defer" src="https://buttons.github.io/buttons.js"></script>
+	<script src="assets/js/alpinejs.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
 
 </html>
