@@ -1,0 +1,104 @@
+.card {
+	background: #ffffff;
+	border-radius: 20px;
+	max-width: 360px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.card__header {
+	padding: 24px;
+}
+
+.card__title {
+	font-size: 29px;
+	font-weight: 700;
+	line-height: 38px;
+	padding: 20px;
+}
+
+.card__img img {
+	max-height: 300px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.card__footer {
+	padding: 24px;
+	color: #000000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+/* User Info Style */
+.user-info {
+	display: flex;
+	align-items: center;
+}
+
+.user-info .avatar {
+	width: 60px;
+	flex-shrink: 0;
+	margin-right: 12px;
+}
+
+.user-info .avatar .img-box {
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+}
+
+.user-info .avatar img {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	object-fit: cover;
+}
+
+.user-info .name {
+	width: 100%;
+	font-size: 15px;
+	color: #78858F;
+	font-weight: 500;
+}
+
+.user-info .name span {
+	display: block;
+	color: #000000;
+	font-size: 20px;
+}
+
+.user-info .user-dd {
+	flex-shrink: 0;
+	margin-left: 12px;
+}
+
+
+/* Card Button Style */
+.card__btn {
+	display: inline-block;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 8px 15px;
+	background: transparent;
+	color: #000000;
+	border: 2px solid #000000;
+	border-radius: 4px;
+	transition: all 0.3s ease-in-out;
+}
+
+.card__btn:hover {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+.card__price {
+	font-size: 20px;
+	color: #000000;
+	font-weight: 700;
+}

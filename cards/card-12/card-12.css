@@ -1,0 +1,121 @@
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.card__header {
+    padding: 25px;
+}
+
+.card__title {
+    color: #000;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 38px;
+    padding-bottom: 10px;
+}
+
+.card__content {
+    padding: 25px;
+}
+
+
+.card__text {
+    color: #606060;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+}
+
+.card__body ul li {
+    padding-bottom: 20px;
+}
+
+/* User Info Style */
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info .avatar {
+    width: 60px;
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+.user-info .avatar .img-box {
+    width: 60px;
+    height: 60px;
+    padding: 2px;
+    border-radius: 100%;
+    background-color: #000000;
+}
+
+.user-info .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+}
+
+.user-info .name {
+    width: 100%;
+    font-size: 15px;
+    color: #78858F;
+    font-weight: 500;
+}
+
+.user-info .name span {
+    display: block;
+    color: #000000;
+    font-size: 20px;
+}
+
+.card__btn {
+    flex-shrink: 0;
+    padding: 9px 16px;
+    color: #ffffff;
+    background-color: #C223EA;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.card__btn:hover,
+.card__btn:focus {
+    background-color: transparent;
+    border-color: #C223EA;
+    color: #C223EA;
+}
+
+.card__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.student__count {
+    color: #A0A0A0;
+}
+
+.view__member {
+    color: #000;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.view__member:hover {
+    color: #C223EA;
+}
